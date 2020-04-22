@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.unlist {
+  list-style: none;
+  display: inline;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  margin: 20px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
