@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 function Post(props) {
   console.log("props", props);
-  const [name, setName] = useState(1);
+  const [name, setName] = useState("");
 
   const handleChange = (e) => {
     setName(e.target.value);
@@ -21,7 +21,9 @@ function Post(props) {
       name: name,
     };
     props.postDataAPI(obj);
+    setName("");
   };
+
   return (
     <div>
       <h1>POST</h1>
